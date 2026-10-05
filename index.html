@@ -406,7 +406,7 @@ p{margin:0;font-size:1.24rem;line-height:1.5;max-width:34ch;font-weight:500}
               <div class="gift-box-bow">
                 <div class="bow"></div>
               </div>
-              <div class="gift-box-text">Te amo</div>
+              <div class="gift-box-text">Feliz 28</div>
             </div>
           </div>
         </div>
@@ -698,9 +698,10 @@ p{margin:0;font-size:1.24rem;line-height:1.5;max-width:34ch;font-weight:500}
       var giftLid=document.getElementById('giftLid');
       if(giftLid)giftLid.style.display='none';
       var giftText=giftSection.querySelector('.gift-box-text');
-      if(giftText)giftText.textContent='Abierto';
+      if(giftText)giftText.textContent='¡Ábrelo!';
       var hint=giftSection.querySelector('.hintline');
-      if(hint)hint.textContent='Toca la flecha para continuar →';
+      if(hint)hint.textContent='Pasa a la siguiente página';
+      setTimeout(function(){go(1)},600);
     },800);
   }
   
